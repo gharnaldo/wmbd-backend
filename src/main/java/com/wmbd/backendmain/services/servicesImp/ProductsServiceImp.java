@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.wmbd.backendmain.dtos.CommoditiesDTO;
 import com.wmbd.backendmain.dtos.ProductsDTO;
 import com.wmbd.backendmain.models.Products;
 import com.wmbd.backendmain.repository.ProductsRepository;
