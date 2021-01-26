@@ -44,7 +44,13 @@ public class ProductsServiceImp implements ProductsService {
 		        for (int i = 0; i < products.size(); i++) 
 		        { 		    
 					ProductsDTO productDTO = new ProductsDTO();
-					productDTO = calculate(products.get(i));
+				    productDTO.setId(products.get(i).getId());
+				    productDTO.setBrand(products.get(i).getBrand());
+				    productDTO.setDescription(products.get(i).getDescription());
+				    productDTO.setImage(products.get(i).getImage());
+				    productDTO.setDiscount((double)0);
+				    productDTO.setPrice(products.get(i).getPrice());
+				    productDTO.setFinalPrice((double) products.get(i).getPrice());
 					productsDTOResponses.add(productDTO);
 		        }
 			}else {
